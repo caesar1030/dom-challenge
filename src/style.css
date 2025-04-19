@@ -1,9 +1,28 @@
-.fa-star-o:before {
-  content: '\f006';
-  color: #5f6368;
+body {
+  background: gray;
 }
 
-.fa-star:before {
-  content: '\f005';
-  color: #d56e0c;
+.chess-board {
+  width: 800px;
+  height: 800px;
+  display: grid;
+  grid-template-rows: repeat(8, 1fr);
+  grid-template-columns: repeat(8, 1fr);
+  gap: 1px;
+}
+
+.chess-board__box {
+  width: 100px;
+  height: 100px;
+}
+.chess-board__box--black {
+  background-color: black;
+}
+
+.chess-board__box--white {
+  background-color: white;
+}
+
+.chess-board__box--red {
+  background-color: red;
 }
